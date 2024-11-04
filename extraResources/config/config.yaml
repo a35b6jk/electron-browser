@@ -1,0 +1,14 @@
+default: https://www.baidu.com/
+# 门诊医生站（doctor station）
+DS: phsm1s9tcp53cvyyh1eudbmxnw773i1o8is6bkbhniw0vl332wilmnad5tp0dss0
+# 安全模块（safe module）
+SM: c1ogso2d2t9xl1hptw5sdnmozhfpmforcnuao92fa6n129duva1oobfljm4eu9r7
+
+
+
+dev:
+  default: https://www.baidu.com/
+  # 门诊医生站（doctor station）
+  DS: phsm1s9tcp53cvyyh1eudbmxnw773i1o8is6bkbhniw0vl332wilmnad5tp0dss0
+  # 安全模块（safe module）
+  SM: c1ogso2d2t9xl1hptw5sdnmozhfpmforcnuao92fa6n129duva1oobfljm4eu9r7

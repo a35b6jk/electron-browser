@@ -3,9 +3,13 @@
  */
 {
   "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-  "appId": "YourAppID",
+  "appId": "com.wyyy.shell",
   "asar": true,
-  "productName": "YourAppName",
+  "productName": "WYYYAPP",
+  "extraResources":  { // 拷贝dll等静态文件到指定位置
+    "from": "./extraResources/",
+    "to": "../extraResources",
+  },
   "directories": {
     "output": "release/${version}"
   },
@@ -20,9 +24,16 @@
     "artifactName": "${productName}-Mac-${version}-Installer.${ext}"
   },
   "win": {
+    "icon": "extraResources/assets/logo-2.ico",
     "target": [
       {
         "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      },
+      {
+        "target": "msi",
         "arch": [
           "x64"
         ]
@@ -36,10 +47,10 @@
     "allowToChangeInstallationDirectory": true,
     "deleteAppDataOnUninstall": false
   },
-  "linux": {
-    "target": [
-      "AppImage"
-    ],
-    "artifactName": "${productName}-Linux-${version}.${ext}"
-  }
+  "publish": [
+      {
+         "provider": "generic",
+         "url": "http://127.0.0.1:9005/" 
+      }
+    ]
 }

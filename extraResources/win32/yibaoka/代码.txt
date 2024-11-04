@@ -1,0 +1,15 @@
+函数申明：
+function Int iReadCardBas_wz( ref string out) library "SSCardDriver_wz.dll"  Alias  for  "iReadCardBas;ansi" 
+
+读卡：
+ls_out = space(1024)
+li_ret = ireadcardbas_wz(ls_out)
+
+读出内容：
+gu_string.uf_stringtoarray( ls_out, '|',ls_str)
+
+行政区划|证件号码|卡号|识别码|姓名
+
+这样格式的字符串,用'|' 符号分割五个字段
+
+卡内数据=识别码+卡号              (字符串直接合并)
