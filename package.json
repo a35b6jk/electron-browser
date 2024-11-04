@@ -9,8 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@breush/ffi-napi": "^4.0.13",
-    "@breush/ref-napi": "^4.0.9",
     "@electron/remote": "^2.1.0",
     "@element-plus/icons-vue": "^2.1.0",
     "electron-store": "^8.1.0",
@@ -23,7 +21,6 @@
     "yaml": "^2.3.4"
   },
   "devDependencies": {
-    "@types/ffi-napi": "^4.0.10",
     "@types/js-md5": "^0.7.2",
     "@types/lodash": "^4.14.201",
     "@vitejs/plugin-vue": "^4.3.4",

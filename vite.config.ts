@@ -12,7 +12,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 const vite: InlineConfig = {
   build: {
     rollupOptions: {
-      external: ['@breush/ffi-napi', '@breush/ref-napi',  'path'],
+      external: ['path'],
     },
   },
 }
